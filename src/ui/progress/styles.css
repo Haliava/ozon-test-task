@@ -1,0 +1,35 @@
+.svg-container {
+    position: relative; 
+    transform-origin: center;
+    transform: rotate(-90deg);
+}
+
+.svg-progress-circle {
+    stroke: #005cff;
+    stroke-linecap: butt;
+    fill:none;
+    transition: stroke-dasharray 0.8s ease-out;
+    stroke-width: 6px;
+    stroke-dasharray: 0 290;
+}
+
+.svg-bg-circle {
+    stroke: #eaf0f6;
+    stroke-linecap: butt;
+    fill:none;
+    stroke-width: 6px;
+    stroke-dasharray: 350 290;
+}
+
+@keyframes spin {
+    0% { transform: rotate(-90deg); }
+    100% {  transform: rotate(269deg); }
+}
+
+.svg-container.hidden {
+    visibility: hidden;
+}
+
+.svg-container.animated {
+    animation: spin 1.5s cubic-bezier(.5,.18,.5,.71) infinite;
+}
