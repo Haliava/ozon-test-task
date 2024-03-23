@@ -1,7 +1,7 @@
 .switch-container {
     display: inline-block;
     font-size: 14px;
-    width: 5.3em;
+    min-width: 5.3em;
 }
 
 .switch-container input,
